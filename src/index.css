@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root, [data-theme="warm"] {
+  --bg-app: #f4efe6;
+  --bg-header: #ebe3d5;
+  --bg-card: #fdfbf7;
+  --bg-subtle: #ede5d8;
+  --border-frame: #28313a;
+  --border-subtle: #d8cfc0;
+  --text-primary: #23272e;
+  --text-secondary: #635d54;
+  --pill-bg: #eae2d4;
+  --pill-text: #454038;
+}
+
+[data-theme="sage"] {
+  --bg-app: #e6ede6;
+  --bg-header: #dce5dc;
+  --bg-card: #f5f8f5;
+  --bg-subtle: #d7e2d7;
+  --border-frame: #1f3325;
+  --border-subtle: #cad6ca;
+  --text-primary: #1c2920;
+  --text-secondary: #4d5e52;
+  --pill-bg: #dbe5db;
+  --pill-text: #324436;
+}
+
+[data-theme="dark"] {
+  --bg-app: #12161a;
+  --bg-header: #181d22;
+  --bg-card: #1c2228;
+  --bg-subtle: #252d36;
+  --border-frame: #3b4654;
+  --border-subtle: #29323c;
+  --text-primary: #edf2f7;
+  --text-secondary: #94a3b8;
+  --pill-bg: #222a33;
+  --pill-text: #cbd5e1;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  margin: 0;
+}

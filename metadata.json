@@ -1,0 +1,6 @@
+{
+  "name": "CLOVERAIT Grammar SRS",
+  "description": "Aplikasi belajar grammar bahasa Inggris berbasis Spaced Repetition System (Leitner Box 0-5) dan Matriks Aturan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
